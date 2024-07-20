@@ -1,3 +1,3 @@
-# CSS 24 Challenege
+# CSS 24 Challenge
 
-This repo conatains the source of my FreeCodeCamp's 24 CSS Projects Challenege.
+This repo conatains the source of my FreeCodeCamp's 24 CSS Projects Challenge.
