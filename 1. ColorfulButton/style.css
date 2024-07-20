@@ -1,0 +1,69 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --font-family: "Karla", sans-serif;
+  --body-bg: #1e1f25;
+  --btn-bg: #000;
+  --btn-color: #cbcbcb;
+  --btn-color-hover: #fff;
+  --grad-color1: #eead61;
+  --grad-color2: #fb9062;
+  --grad-color3: #ee5d6c;
+  --grad-color4: #ce4993;
+  --grad-color5: #6a0d83;
+  --dir: right
+}
+
+body {
+  background-color: var(--body-bg);
+}
+
+.container {
+  min-height: 100svh;
+  min-width: 100svw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button.button {
+  font-family: var(--font-family);
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 5%;
+  font-size: 2rem;
+
+  background-color: var(--btn-bg);
+  color: var(--btn-color);
+
+  width: 350px;
+  height: 100px;
+  padding: 1rem 2rem;
+
+  border: 3px solid;
+  border-image-slice: 1;
+  border-width: 3px;
+  border-image-source: linear-gradient(
+    to var(--dir),
+    var(--grad-color1),
+    var(--grad-color2),
+    var(--grad-color3),
+    var(--grad-color4),
+    var(--grad-color5)
+  );
+}
+
+button.button:hover {
+  color: var(--btn-color-hover);
+  transform: scale(1.01);
+  border-width: 2px;
+  --dir: left;
+}
