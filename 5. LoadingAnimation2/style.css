@@ -1,0 +1,48 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color1: red;
+  --color2: orange;
+  --color3: blue;
+}
+
+.container {
+  min-height: 100svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.square {
+  width: 1.5em;
+  height: 1.5em;
+  margin: .5em;
+  animation: rotate infinite 1.5s;
+  transform: rotate(45deg);
+}
+
+.square.square1 {
+  background-color: var(--color1);
+}
+
+.square.square2 {
+  background-color: var(--color2);
+}
+
+.square.square3 {
+  background-color: var(--color3);
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(-45deg);
+  }
+
+  to {
+    transform: rotate(45deg);
+  }
+}
