@@ -18,8 +18,8 @@
 html,
 body {
   background-color: var(--bg-color);
-  background-image: radial-gradient(circle, #0000 15%, #000f 18%),
-    radial-gradient(ellipse farthest-corner, green 20%, darkgreen 80%);
+  /* background-image: radial-gradient(circle, #0000 15%, #000f 18%),
+    radial-gradient(ellipse farthest-corner, green 20%, darkgreen 80%); */
   color: var(--text-color);
 }
 

@@ -1,0 +1,52 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg-word: #5134ff;
+}
+
+.container {
+  height: 100svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: system-ui;
+}
+
+h1::after {
+  content: '';
+  padding: 10px;
+  margin-left: 4px;
+  border-radius: 4px;
+  background: var(--bg-word);
+  color: white;
+  animation: 6s type infinite;
+}
+
+@keyframes type {
+  0% {
+    content: 'Coding';
+  }
+
+  25% {
+    content: 'Playing';
+  }
+
+  50% {
+    content: 'Eating';
+  }
+
+  75% {
+    content: 'Studying';
+  }
+
+  100% {
+    content: 'Designing';
+  }
+}
