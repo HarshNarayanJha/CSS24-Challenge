@@ -21,6 +21,28 @@ body {
   /* background-image: radial-gradient(circle, #0000 15%, #000f 18%),
     radial-gradient(ellipse farthest-corner, green 20%, darkgreen 80%); */
   color: var(--text-color);
+  position: relative;
+  overflow-x: hidden;
+}
+
+.blur-dot,
+.blur-dot-bottom {
+  width: 1500px;
+  height: 1500px;
+  position: absolute;
+  pointer-events: none;
+}
+
+.blur-dot {
+  top: -780px;
+  background-image: radial-gradient(closest-side, rgba(50, 150, 255, 0.25), transparent);
+  left: 350px;
+}
+
+.blur-dot-bottom {
+  bottom: 0px;
+  background-image: radial-gradient(closest-side, rgba(200, 100, 50, 0.25), transparent);
+  left: 750px;
 }
 
 .container {
