@@ -1,0 +1,40 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --card-height: 200px;
+}
+
+.card {
+  margin: 2em auto;
+  width: calc(2 / 3 * var(--card-height));
+  height: var(--card-height);
+  background-color: whitesmoke;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 0.5em;
+
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  place-items: center;
+}
+
+.top {
+  align-self: start;
+  font-weight: 600;
+}
+
+.center {
+  /* place-content: center; */
+  font-size: 3em;
+  font-weight: 600;
+}
+
+.bottom {
+  align-self: end;
+  transform: rotate(180deg);
+  font-weight: 600;
+}
