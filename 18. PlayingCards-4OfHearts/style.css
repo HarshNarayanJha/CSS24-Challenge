@@ -17,22 +17,36 @@ body {
   border-radius: 5px;
   padding: 0.5em;
 
+  color: red;
+
   display: grid;
   grid-template-columns: 10% 80% 10%;
   place-items: center;
+
+  text-align: center;
 }
 
-.top {
+.left {
   align-self: start;
   font-weight: 600;
 }
 
-.center {
-  font-size: 3em;
+.middle {
+  font-size: 2.8em;
   font-weight: 600;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 48px;
+  column-gap: 12px;
 }
 
-.bottom {
+.middle div:nth-last-child(1),
+.middle div:nth-last-child(2) {
+  transform: rotate(180deg);
+}
+
+.right {
   align-self: end;
   transform: rotate(180deg);
   font-weight: 600;
