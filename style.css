@@ -9,6 +9,7 @@
 :root {
   --bg-color: #121212;
   --text-color: #ffffffcc;
+  --text-success: #88ff8899;
   --text-muted: #aaaaaa88;
   --bg-card: #1c1c1c44;
   --card-shadow-color: rgba(100, 100, 100, 0.12);
@@ -18,8 +19,6 @@
 html,
 body {
   background-color: var(--bg-color);
-  /* background-image: radial-gradient(circle, #0000 15%, #000f 18%),
-    radial-gradient(ellipse farthest-corner, green 20%, darkgreen 80%); */
   color: var(--text-color);
   position: relative;
   overflow-x: hidden;
@@ -34,15 +33,15 @@ body {
 }
 
 .blur-dot {
-  top: -780px;
+  top: -40%;
   background-image: radial-gradient(closest-side, rgba(50, 150, 255, 0.25), transparent);
-  left: 350px;
+  left: 30%;
 }
 
 .blur-dot-bottom {
   bottom: 0px;
   background-image: radial-gradient(closest-side, rgba(200, 100, 50, 0.25), transparent);
-  left: 750px;
+  left: 70%;
 }
 
 .container {
@@ -82,6 +81,7 @@ body {
 
 .content p {
   margin-top: 25px;
+  margin-bottom: 25px;
   font-size: 1.8rem;
   color: var(--text-muted);
   font-weight: 600;
@@ -97,6 +97,14 @@ body {
     "Open Sans",
     "Helvetica Neue",
     sans-serif;
+}
+
+p + small {
+  font-size: 1.4rem;
+  color: var(--text-success);
+  text-transform: uppercase;
+  font-weight: 900;
+  font-family: "Courier New", Courier, monospace;
 }
 
 /* Cards */
@@ -194,12 +202,12 @@ footer .footer {
   height: 100%;
   display: flex;
   justify-content: space-between;
+  font-family: monospace;
   align-items: center;
 }
 
 .footer a {
   text-decoration: none;
   color: #fff;
-  font-family: monospace;
   font-size: 1rem;
 }
